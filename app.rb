@@ -13,8 +13,8 @@ class App < Sinatra::Base
   
   
   post '/puppy' do
-    @puppy = params["string"]
-    
+    @puppy = Puppy.new(params[:user_text])
+ 
     erb :display_puppy
   end
 end
