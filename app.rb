@@ -10,7 +10,7 @@ class App < Sinatra::Base
     erb :index
   end
   
-  post '/' do
-    
+  post '/puppy' do
+    erb :
   end
 end
